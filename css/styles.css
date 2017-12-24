@@ -1,0 +1,274 @@
+  body{
+
+    background-color: black;
+    height: 100vh;
+/*    overflow: hidden;*/
+
+  }
+
+  h1{
+
+  font-size: 55px;
+  color: white;
+font-family: 'Crushed', cursive;
+  text-align: center;
+  margin-top: 14rem;
+  letter-spacing: 40px;
+  font-weight: lighter;
+  position: relative;
+  bottom: 27rem;
+
+}
+
+h1:before, h1:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 80px;
+  width: 90px;
+  background: transparent;
+
+}
+
+@keyframes laurie{
+
+   0%{margin-left: 50%}
+   100%{margin-left: 0%;}
+} 
+
+h1:before {
+  color: black;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  bottom: 6rem;
+  left: 12rem;
+  animation-name: laurie;
+  animation-delay: .400s;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+   /*animation-direction: reverse;*/
+}
+
+h1:after {
+  color: black;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  right: 10rem;
+  animation-name: lauriee;
+  animation-delay: .400s;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  /*animation-direction: reverse;*/
+}
+
+@keyframes lauriee{
+
+  0%{margin-right: 50%}
+  100%{margin-right: 0%;}
+} 
+
+span{
+  display: block;
+  margin-bottom: 70px;
+}
+
+nav{
+
+  font-size: 13px;
+  letter-spacing: 5px;
+  margin-left: 24rem;
+  font-family: 'Poiret One', cursive;
+
+}
+
+.nav-link{
+  margin-right:39px;
+}
+
+.nav-link3{
+
+  margin-left: 3rem;
+  position: relative;
+  top: 12px;
+}
+
+.nav-link:hover, .nav-link3:hover{
+  opacity: 0;
+  transition: 2s;
+  animation-name: laurieez;
+  text-decoration: none;
+}
+
+@keyframes laurieez{
+
+  0%{border-bottom: 10%}
+  100%{border-bottom: 100%;}
+} 
+
+
+.nav-link:hover:after, .nav-link3:hover:after{
+  opacity: 1;
+  transition: 2s;
+}
+
+.prenom{
+
+  border:1px solid;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  padding: 12px;
+  font-weight: bolder;
+}
+
+.prenom:hover{
+
+  background-color: white;
+  color: black;
+}
+
+a{
+
+  color: white;
+}
+
+.fa{
+
+  position: relative;
+  color: white;
+  position: relative;
+  top: 10px;
+}
+
+video{
+  position: relative;
+  object-fit:cover;
+  top: 8rem;
+  left: 22rem;
+  z-index: -1;
+
+}
+
+.acc{
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  position: relative;
+  bottom: 32rem;
+  margin-left: 4rem;
+  color: white;
+  opacity: 0.8;
+  font-style: italic;
+  font-size: 12px;
+}
+/*
+.photo{
+
+  display: flex;
+
+}*/
+
+figure:hover .test-laurie img {
+  transition:1s;
+ 
+  opacity: .4;
+  transform: scale(1.12);
+}
+
+figure:hover figcaption{
+  opacity:1;
+  transform:translate(0);
+  bottom: 10rem;
+   cursor: pointer;
+}
+
+figure:hover:nth-child(2) figcaption{
+  bottom:15rem;
+}
+
+
+figcaption{
+
+  position:absolute;
+  right: 0;
+  left:0;
+  bottom:1rem;
+  color:white;
+  background-color: rgba(255, 255, 255, .8);
+  opacity:0;
+  transition:1s;
+  transform:translateY(5px);
+}
+
+small {
+  font-size: 42px;
+}
+
+small img {
+  position: relative;
+  /*top: 2rem;*/
+  margin: 10px;
+  height: 80px;
+  width: 80px;
+}
+
+
+
+.test-laurie {
+  overflow: hidden;
+  background:black;
+}
+
+
+.over{
+  overflow: hidden;
+  display: inline-block;
+}
+
+.img1{
+
+  width: 60%;
+  height: 60%;
+  position: relative;
+
+}
+
+.img2{
+
+  width: 25%;
+  height:50%;
+  position: relative;
+  top: 8rem;
+}
+
+.img3{
+
+  width: 60%;
+  height: 60%;
+  position: relative;
+  bottom: 2rem;
+}
+
+.img4{
+
+  width: 60%;
+  height: 60%;
+  position: relative;
+  bottom: 3rem;
+
+}
+/*
+.img5{
+
+  width: 30%;
+  height: 100%;
+}
+*/
+.pageportfolio{
+
+  background-color: white;
+}
+
+.photo{
+
+
+}
